@@ -280,7 +280,7 @@ span {
 }
 
 /* Responsive design for service boxes */
-.services-content {
+.flavour-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   justify-content: center;
@@ -288,9 +288,9 @@ span {
   margin-top: 2rem;
 }
 
-.services-box {
+.flavour-box {
   padding: 20px;
-  width: 220px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -301,38 +301,38 @@ span {
   transition: transform 0.3s ease;
 }
 
-.services-box:hover {
+.flavour-box:hover {
   background-color: #02225a;
   transform: scale(1.1); /* Make the box 10% larger on hover */
 }
 
-.services-box h3 {
+.flavour-box h3 {
   font-size: 1rem;
   font-weight: 600;
   margin: 0.7rem 0 0.4rem;
 }
 
-.services-box:hover h3 {
+.flavour-box:hover h3 {
   color: #fff;
 }
 
-.services-box .bx {
+.flavour-box .bx {
   padding-top: 2rem;
   font-size: 54px;
   color: var(--main-color);
 }
 
-.services-box:hover .bx {
+.flavour-box:hover .bx {
   color: #22cf91;
 }
 
-.services-box a {
+.flavour-box a {
   color: var(--main-color);
   font-size: var(--p-font);
   font-weight: 500;
 }
 
-.services-box:hover a {
+.flavour-box:hover a {
   color: #8b8a8f;
 }
 
@@ -349,7 +349,7 @@ span {
   color: rgb(2, 166, 70);
 }
 
-.sun-services {
+.sun-flavour {
   display: flex;
   flex-direction: column;
   align-items: center;
