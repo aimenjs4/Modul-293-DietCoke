@@ -5,137 +5,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Portfolio and History</title>
+    <title>Dietcoke The Product</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <a href="#" class="logo">Modul<span>293</span>.</a>
-        
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <!-- Navbar -->
+<!-- Header Section -->
+<header>
+    <a href="#" class="logo" aria-label="Logo Modul293">Modul<span>293</span>.</a>
+
+    <div class="bx bx-menu" id="menu-icon" aria-label="Toggle menu"></div>
+    <!-- Navbar -->
+    <nav aria-label="Main navigation">
         <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Different Flavours</a></li>
-            <li><a href="404.html">00111111</a></li>
+            <li><a href="#home" aria-label="Navigate to Home section">Home</a></li>
+            <li><a href="#about" aria-label="Navigate to About section">About</a></li>
+            <li><a href="#flavour" aria-label="Navigate to Different Flavours section">Different Flavours</a></li>
+
         </ul>
-    </header>
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <!-- Home Content -->
-        <div class="social"></div>
-        <div class="home-img">
-            <img src="dubcoke.webp" alt="Profile Picture">
-        </div>
-        <div class="home-text">
-            <h1><span id="typewriter"></span></h1>
-            <p>Refreshing Taste <br> Enjoy the Taste of Coca with zero Calories. <br></p>
-
-        </div>
-    </section>
-    <!-- Typewriter Effect Script -->
-    <script>
-        const text = "Diet Coke";
-        let index = 0;
-        function typewriter() {
-            if (index < text.length) {
-                if (text[index] === " ") {
-                    document.getElementById('typewriter').innerHTML += "&nbsp;";
-                } else {
-                    document.getElementById('typewriter').innerText += text.charAt(index);
-                }
-                index++;
-                setTimeout(typewriter, 300);
+    </nav>
+</header>
+<!-- Home Section -->
+<section class="home" id="home" aria-labelledby="home-heading">
+    <!-- Home Content -->
+    <div class="social"></div>
+    <div class="home-img">
+        <img src="dubcoke.webp" loading = "lazy" alt="Diet Coke can">
+    </div>
+    <div class="home-text">
+        <h1 id="home-heading"><span id="typewriter"></span></h1>
+        <p>Refreshing Taste <br> Enjoy the Taste of Coca with zero Calories. <br></p>
+    </div>
+</section>
+<!-- Typewriter Effect Script -->
+<script>
+    const text = "Diet Coke";
+    let index = 0;
+    function typewriter() {
+        if (index < text.length) {
+            if (text[index] === " ") {
+                document.getElementById('typewriter').innerHTML += "&nbsp;";
+            } else {
+                document.getElementById('typewriter').innerText += text.charAt(index);
             }
+            index++;
+            setTimeout(typewriter, 300);
         }
-        typewriter();
-    </script>
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>About Me</h2>
-            <span>Introduction</span>
+    }
+    typewriter();
+</script>
+<!-- About Section -->
+<section class="about" id="about" aria-labelledby="about-heading">
+    <div class="heading">
+        <h2 id="about-heading">About Me</h2>
+        <span>Introduction</span>
+    </div>
+    <!-- About Content -->
+    <div class="about-container">
+        <div class="about-img">
+            <img src="spincoke.gif" loading = "lazy" Spinning Diet Coke can">
         </div>
-        <!-- About Content -->
-        <div class="about-container">
-            <div class="about-img">
-                <img src="spincoke.gif" alt="Profile Picture">
-            </div>
-            <div class="about-text">
-                <p>Diet Coke is a sugar-free, low-calorie carbonated soft drink produced by The Coca-Cola Company. Introduced in 1982.</p>
-                <!-- Information -->
-                <div class="information">
-                    <div class="info-box">
-                        <i class='bx bxs-user'></i>
-                        <span>Aimen Labidi</span>
-                    </div>
-                    <div class="info-box">
-                        <i class='bx bxs-home-heart'></i>
-                        <span>Switzerland</span>
-                    </div>
-    
-
-        </div>
-    </section>
-    <!-- Experience and Skills Section -->
-    <section class="services" id="services">
-        <div class="heading">
-            <h2>Flavours</h2>
-            <span>of coke.</span>
-        </div>
-        <!-- Services Content -->
-        <div class="services-content">
-            <div class="services-box">
-                <i class='bx bxs-coffee-bean'></i>
-                <h3>Coffee</h3>
-            </div>
-            <div class="services-box">
-                <i class='bx bxs-leaf'></i>
-                <h3>Life</h3>
-            </div>
-            <div class="services-box">
-                <i class='bx bxs-drink'></i>
-                <h3>Original</h3>
-            </div>
-            <div class="services-box">
-                <i class='bx bx-lemon'></i>
-                <h3>Lemon</h3>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="heading">
-            <h2>Contact Me</h2>
-            <span>Get in Touch</span>
-        </div>
-        <!-- Contact Content -->
-        <div class="contact-content">
-            <div class="heading">
-                <p>If you have any questions or need further assistance, please reach me at:</p>
-                <!-- Email Link -->
-                <div class="email-content">
-                    <a href="mailto:aimen.labidi@gmx.ch" class="email-link">
-                        <div class="email-box">
-                            <i class='bx bxs-envelope'></i>
-                            <h3>Contact Me</h3>
-                        </div>
-                    </a>
+        <div class="about-text">
+            <p>Diet Coke is a sugar-free, low-calorie carbonated soft drink produced by The Coca-Cola Company. Introduced in 1982.</p>
+            <!-- Information -->
+            <div class="information">
+                <div class="info-box">
+                    <i class='bx bxs-user' aria-hidden="true"></i>
+                    <span>John Sith Pemberton</span>
+                </div>
+                <div class="info-box">
+                    <i class='bx bxs-home-heart' aria-hidden="true"></i>
+                    <span>Atlanta</span>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Footer Section -->
-    <footer>
-        <a href="#" class="logo">Aimen Labidi <span>Made with VSCode</span>.</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <ul class="navbar"></ul>
-    </footer>
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    </div>
+</section>
+<!-- Experience and Skills Section -->
+<section class="flavour" id="flavour" aria-labelledby="flavour-heading">
+    <div class="heading">
+        <h2 id="flavour-heading">Flavours</h2>
+        <span>of coke.</span>
+    </div>
+    <!-- flavour Content -->
+    <div class="flavour-content">
+        <div class="flavour-box" aria-label="Coffee flavor">
+            <i class='bx bxs-coffee-bean' aria-hidden="true"></i>
+            <h3>Coffee</h3>
+        </div>
+        <div class="flavour-box" aria-label="Life flavor">
+            <i class='bx bxs-leaf' aria-hidden="true"></i>
+            <h3>Life</h3>
+        </div>
+        <div class="flavour-box" aria-label="Original flavor">
+            <i class='bx bxs-drink' aria-hidden="true"></i>
+            <h3>Original</h3>
+        </div>
+        <div class="flavour-box" aria-label="Lemon flavor">
+            <i class='bx bx-lemon' aria-hidden="true"></i>
+            <h3>Lemon</h3>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" aria-labelledby="contact-heading">
+    <div class="heading">
+        <h2 id="contact-heading">Contact Me</h2>
+        <span>Get in Touch</span>
+    </div>
+    <!-- Contact Content -->
+    <div class="contact-content">
+        <div class="heading">
+            <p>If you have any questions or need further assistance, please reach me at:</p>
+            <!-- Email Link -->
+            <div class="email-content">
+                <a href="mailto:aimen.labidi@gmx.ch" class="email-link" aria-label="Send email to Aimen Labidi">
+                    <div class="email-box">
+                        <i class='bx bxs-envelope' aria-hidden="true"></i>
+                        <h3>Contact Me</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer>
+    <a href="#" class="logo" aria-label="Aimen Labidi portfolio footer logo">Aimen Labidi <span>Made with VSCode</span>.</a>
+    <div class="bx bx-menu" id="menu-icon" aria-label="Footer menu toggle"></div>
+    <ul class="navbar"></ul>
+</footer>
+<!-- JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
